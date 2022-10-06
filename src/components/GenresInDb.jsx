@@ -1,3 +1,5 @@
+import Row from "./Row";
+
 const GenresInDb = () => {
   return (
     <div className="col-lg-6 mb-4">
@@ -8,7 +10,7 @@ const GenresInDb = () => {
           </h5>
         </div>
         <div className="card-body">
-          <div className="row">
+          <Row>
             <div className="col-lg-6 mb-4">
               <div className="card bg-dark text-white shadow">
                 <div className="card-body">Acción</div>
@@ -59,7 +61,7 @@ const GenresInDb = () => {
                 <div className="card-body">Musical</div>
               </div>
             </div>
-          </div>
+          </Row>
         </div>
       </div>
     </div>
