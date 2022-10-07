@@ -1,4 +1,7 @@
 import Row from "./Row";
+import GenreCard from "./GenreCard";
+
+import { genres } from '../data/data';
 
 const GenresInDb = () => {
   return (
@@ -11,56 +14,9 @@ const GenresInDb = () => {
         </div>
         <div className="card-body">
           <Row>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Acción</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Animación</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Aventura</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Ciencia Ficción</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Comedia</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Documental</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Drama</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Fantasia</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Infantiles</div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">Musical</div>
-              </div>
-            </div>
+            { genres.map((genre, i) => (
+              <GenreCard name={genre} key={i}/>
+            ))}
           </Row>
         </div>
       </div>

@@ -1,4 +1,4 @@
-export const cardsValues = [
+export const contentMoviesValues = [
   {
     title: "Movies in Data Base",
     number: 21,
@@ -46,3 +46,16 @@ export const movies = [
     awards: 3,
   },
 ];
+
+export const genres = [
+  "Acción",
+  "Animación",
+  "Aventura",
+  "Ciencia Ficción",
+  "Comedia",
+  "Documental",
+  "Drama",
+  "Fantasia",
+  "Infantiles",
+  "Musical",
+] 
